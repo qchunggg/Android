@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".AutoCompleteTextViewActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3F51B5"
+        android:padding="12dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"/>
+
+    <!-- Single AutoComplete -->
+    <AutoCompleteTextView
+        android:id="@+id/editauto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:hint="Start typing..."
+        android:completionThreshold="1"
+        android:ems="10"/>
+
+    <!-- Multiple AutoComplete -->
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:hint="Separate with commas"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:inputType="text"
+        android:completionHint="Choose items"/>
+
+</LinearLayout>
